@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FCC: Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+	<h1 id="title">FreeCodeCamp Survey Form</h1>
+	<p id="description">Thank you for taking the time to help us improve the platform</p>
+	<form id="survey-form">
+	<label id="name-label">Name</label>
+	<br>
+	<input type="text" id="name" name="name" placeholder="Enter your name" required>
+	<br>
+	<label id="email-label">Email</label>
+	<br>
+	<input type="email" id="email" placeholder="Enter your Email" required>
+	<br>
+	<label id="number-label">Age(Optional)</label>
+	<br>
+	<input type="number" id="number" min="1" max="100" placeholder="Age">
+	<br>
+	<label for="role">Which option best describes your current role?</label>
+	<br>
+	<select id="dropdown" name="role" >
+    <option value="role" Disabled = true, Selected = true>Select current role</option>
+    <option value="student">Student</option>
+    <option value="job">Full Time Job</option>
+    <option value="learner">Full Time Learner</option>
+    <option value="no">Prefer Not To Say</option>
+    <option value="other">Other</option>
+  </select>
+  <br>
+  <label for="recomend" id="recommend">Would you recommend freeCodeCamp to a friend?</label>
+  <br>
+  
+  <input type="radio" name="drone" value="definitely" checked>
+  <label for="male">Definitely</label><br>
+  <input type="radio" name="drone" value="Maybe">
+  <label for="female">Maybe</label><br>
+  <input type="radio" name="drone" value="Notsure">
+  <label for="other">Not sure</label>
+ 
+
+<label for="feature">What is your favorite feature of freeCodeCamp?</label>
+	<br>
+	<select id="feature" name="feature">
+    <option value="select" Disabled = true, Selected = true>Select an option</option>
+    <option value="challenge">Chellenges</option>
+    <option value="project">Projects</option>
+    <option value="community">community</option>
+    <option value="source">Open source</option>
+    
+  </select>
+  <br>
+  <label>What would you like to see improved? (Check all that apply)</label>
+  <br>
+  
+  <input type="checkbox" value="front_end" checked>
+  <label for="checkbox1"> Front-end Projects</label><br>
+  <input type="checkbox" value="Backend">
+  <label for="checkbox2">Back-end Projects</label><br>
+  <input type="checkbox" value="datamining">
+  <label for="checkbox3">Data Visualization</label><br>
+  <input type="checkbox" value="challenges">
+  <label for="checkbox4">Challenges</label><br>
+  <input type="checkbox" value="front_end">
+  <label for="checkbox5">Open Source Community</label><br>
+  <input type="checkbox" value="front_end">
+  <label for="vcheckbox6">Gitter help rooms</label><br>
+  <input type="checkbox" value="front_end">
+  <label for="checkbox7">Videos</label><br>
+  <input type="checkbox" value="front_end">
+  <label for="checkbox8">City Meetups</label><br>
+  <input type="checkbox" value="front_end">
+  <label for="checkbox9">Wiki</label><br>
+  <input type="checkbox" value="front_end">
+  <label for="checkbox10">Forum</label><br>
+  <input type="checkbox" value="front_end">
+  <label for="checkbox11">Additional Courses</label>
+  <br>
+
+
+
+<label for="comment" id="comment">Any comments or suggestions?</label><br>
+
+<textarea id="story" name="story" placeholder="Enter your comments here...."></textarea>
+<br>
+<button type="submit" id="submit">Submit</button>
+
+</form>
+</body>
+</html>
